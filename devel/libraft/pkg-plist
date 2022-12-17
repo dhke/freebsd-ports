@@ -1,0 +1,8 @@
+include/raft.h
+include/raft/fixture.h
+lib/libraft.a
+lib/libraft.la
+lib/libraft.so
+lib/libraft.so.2
+lib/libraft.so.2.0.0
+libdata/pkgconfig/raft.pc

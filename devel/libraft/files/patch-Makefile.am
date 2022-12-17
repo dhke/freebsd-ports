@@ -1,0 +1,11 @@
+--- Makefile.am.orig	2022-11-18 15:35:34.000000000 +0100
++++ Makefile.am	2022-12-17 14:51:32.390285000 +0100
+@@ -80,7 +80,7 @@
+ if LZ4_AVAILABLE
+ test_unit_core_CFLAGS += -DLZ4_AVAILABLE
+ test_unit_core_LDFLAGS = $(LZ4_LIBS)
+-libraft_la_CFLAGS += -DLZ4_AVAILABLE
++libraft_la_CFLAGS += -DLZ4_AVAILABLE $(LZ4_CFLAGS)
+ libraft_la_LDFLAGS += $(LZ4_LIBS)
+ endif # LZ4_AVAILABLE
+ if LZ4_ENABLED
